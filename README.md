@@ -30,21 +30,6 @@ $$\mathbb{P}(O^* \mid \lambda, \mu) \approx \frac{1}{M} \sum_{m=1}^{M} \exp\left
 
 where $\| \cdot \|$ is the Euclidean norm and $\beta$ controls the strictness of the metric. To prevent numerical underflow over long time horizons, the inference engine computes the **Log-Likelihood**.
 
-## 📂 Repository Architecture
-
-```text
-├── src/
-│   ├── StochasticMethods.jl    # Main module wrapper and exports
-│   ├── Epidemic.jl             # Graph generation and Gillespie SSA core
-│   └── Inference.jl            # Likelihood and distance metrics
-├── scripts/
-│   ├── 0.1_simulate_sir.jl     # Generates ground truth and visualizes trajectory
-│   └── 0.2_run_inference.jl    # Executes the Monte Carlo grid search
-├── notebooks/
-│   └── Stochastic_SIR_Inference.ipynb  # Comprehensive narrative and results
-├── Project.toml                # Julia environment and dependencies
-└── README.md
-
 ## 🚀 Quick Start
 
 **1. Clone the Repository & Instantiate the Environment**
