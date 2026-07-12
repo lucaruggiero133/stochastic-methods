@@ -37,3 +37,24 @@ where $\| \cdot \|$ is the Euclidean norm and $\beta$ controls the strictness of
 git clone [https://github.com/yourusername/stochastic-sir-inference.git](https://github.com/yourusername/stochastic-sir-inference.git)
 cd stochastic-sir-inference
 julia
+```
+
+Inside the Julia REPL, press ] to enter the package manager and instantiate the environment:
+```bash
+pkg> activate .
+pkg> instantiate
+```
+
+**2. Run the Physical Simulation
+Simulate a ground truth epidemic trajectory and visualize the time-series:
+```bash
+julia scripts/0.1_simulate_sir.jl
+```
+
+**3. Run the Inference Engine
+Execute the Monte Carlo log-likelihood grid search to estimate $\lambda^*$ and $\mu^*$:
+```bash
+julia scripts/0.2_run_inference.jl
+```
+
+
