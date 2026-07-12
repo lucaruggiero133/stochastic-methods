@@ -26,9 +26,9 @@ $$I \xrightarrow{\mu} R$$
 ### 2. Log-Likelihood Inference via Soft Approximation
 To deduce the true parameters from an observed trajectory $O^*$, we sample $M$ Monte Carlo trajectories $X_m$ for different $(\lambda, \mu)$ pairs. Because finding exact discrete trajectory matches is computationally intractable for large state spaces, we approximate the Kronecker delta using a continuous, distance-based soft weight:
 
-$$\mathbb{P}(O^{*}\vert{}\lambda,\mu) \approx \frac{1}{M}\sum_{m=1}^M e^{-\beta \vert{}\vert{}O^{*}-O(X_m)\vert{}\vert{}}$$
+$$\mathbb{P}(O^* \mid \lambda, \mu) \approx \frac{1}{M} \sum_{m=1}^{M} \exp\left( -\beta \| O^* - O(X_m) \| \right)$$
 
-where $\vert{}\vert{} \cdot \vert{}\vert{}$ is the Euclidean norm and $\beta$ controls the strictness of the metric. To prevent numerical underflow over long time horizons, the inference engine computes the **Log-Likelihood**.
+where $\| \cdot \|$ is the Euclidean norm and $\beta$ controls the strictness of the metric. To prevent numerical underflow over long time horizons, the inference engine computes the **Log-Likelihood**.
 
 ## 📂 Repository Architecture
 
