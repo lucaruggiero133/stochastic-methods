@@ -52,7 +52,7 @@ julia scripts/0.1_simulate_sir.jl
 ```
 
 **3. Run the Inference Engine**
-Execute the Monte Carlo log-likelihood grid search to estimate $}\lambda}^{*}$ and ${\mu}^{*}$: 
+Execute the Monte Carlo log-likelihood grid search to estimate $\lambda^\ast$ and $\mu^\ast$: 
 ```bash
 julia scripts/0.2_run_inference.jl
 ```
