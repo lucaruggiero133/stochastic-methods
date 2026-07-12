@@ -44,3 +44,11 @@ where $\| \cdot \|$ is the Euclidean norm and $\beta$ controls the strictness of
 │   └── Stochastic_SIR_Inference.ipynb  # Comprehensive narrative and results
 ├── Project.toml                # Julia environment and dependencies
 └── README.md
+
+## 🚀 Quick Start
+
+**1. Clone the Repository & Instantiate the Environment**
+```bash
+git clone [https://github.com/yourusername/stochastic-sir-inference.git](https://github.com/yourusername/stochastic-sir-inference.git)
+cd stochastic-sir-inference
+julia
